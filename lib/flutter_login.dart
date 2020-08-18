@@ -270,7 +270,7 @@ class FlutterLogin extends StatefulWidget {
   final bool showDebugButtons;
 
   static final FormFieldValidator<String> defaultEmailValidator = (value) {
-    if (value.isEmpty || Regex.email.hasMatch(value)) {
+    if (value.isEmpty) {
       return 'Invalid email!';
     }
     return null;
