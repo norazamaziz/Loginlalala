@@ -135,8 +135,8 @@ class LoginScreen extends StatelessWidget {
       //   ),
       // ),
       emailValidator: (value) {
-        if (!value.contains('@') || !value.endsWith('.com')) {
-          return "Email must contain '@' and end with '.com'";
+        if (value.isEmpty) {
+          return 'Username is empty';
         }
         return null;
       },
