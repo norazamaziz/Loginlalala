@@ -205,9 +205,9 @@ class __HeaderState extends State<_Header> {
 class FlutterLogin extends StatefulWidget {
   FlutterLogin({
     Key key,
-    @required this.onSignup,
+    //@required this.onSignup,
     @required this.onLogin,
-    @required this.onRecoverPassword,
+    //@required this.onRecoverPassword,
     this.title,
     this.logo,
     this.messages,
@@ -221,13 +221,13 @@ class FlutterLogin extends StatefulWidget {
   }) : super(key: key);
 
   /// Called when the user hit the submit button when in sign up mode
-  final AuthCallback onSignup;
+  //final AuthCallback onSignup;
 
   /// Called when the user hit the submit button when in login mode
   final AuthCallback onLogin;
 
   /// Called when the user hit the submit button when in recover password mode
-  final RecoverCallback onRecoverPassword;
+  //final RecoverCallback onRecoverPassword;
 
   /// The large text above the login [Card], usually the app or company name
   final String title;
